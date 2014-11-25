@@ -1,0 +1,69 @@
+/*
+	Theme Name: Geek
+	Author: dezang
+	Author URI: http://dezang.net
+	Description: For Geeks
+	Version: 0.1
+	Tags: 	develope, programer, simple, responsive-layout,
+			bootstrap, one-column
+*/
+header, footer, section, article, aside, nav, hgroup, details, menu, figure, figcaption {
+    display: block
+}
+
+/* Layout */
+html {
+	position: relative;
+	min-height: 100%;
+	overflow-y:scroll;
+}
+
+body {
+	margin-bottom: 100px;
+	/*font-family: 'Malgun Gothic', Arial, sans-serif;*/
+	font-size: 15px;
+	line-height: 1.6;
+	color: #3c3c3c;
+	background: #f3f3f3;
+}
+
+.geek-header-bg {
+	background-color: black;
+	color: white;
+}
+
+.geek-footer-bg {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: right;
+	/*padding-top: 40px;*/
+	color: white;
+	background-color: black;
+}
+
+/* Style */
+#main {
+	background: #fff;
+	border: 1px solid #dedede;
+	border-radius: 2px;
+}
+
+footer h3 {
+	font-size : 15px;
+}
+
+/******************************
+	FOR DEV
+ ******************************/
+/*div {
+	border-style: dotted;
+	border-color: red;
+	border-width: 1px;
+}
+
+.container {
+	border-style: dotted;
+	border-color: blue;
+	border-width: 1px;
+}*/
