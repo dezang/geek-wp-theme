@@ -3,6 +3,10 @@
   <div class="row">
     <main id="main">
       <section id="content">
+        <h2>
+          if (category == "<?php single_cat_title('') ?>")) <span class="post-bracket">{</p>
+        </h2>
+
         <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
           <article>
             <h1 id="post_title">
@@ -22,10 +26,7 @@
             <p class="post-bracket">{</p>
             <p class="post-info"><span class="post-info-title">updated</span> : <?php the_modified_date(''); ?> <?php the_modified_time(); ?>,</p>
             <p class="post-info"><span class="post-info-title">category</span> : [ <?php the_category(' ,'); ?> ],</p>
-            <?php if(has_tag()) { ?>
             <p class="post-info"><span class="post-info-title">tags</span> : <?php the_tags('[ ',', ',' ]'); ?>,</p>
-            <?php } ?>
-            
             <div class="excerpt-wrapper">
               <p class="post-info excerpt"><span class="post-info-title">excerpt</span> : </p>
               <div class="excerpt-content"><?php the_excerpt(); ?></div>
@@ -35,6 +36,7 @@
         <?php endwhile; else: ?>
         <h2>미안해요, 글이 없네요</h2>
       <?php endif; ?>
+      <p class="post-bracket">}</p>
       <!-- paging -->
       <nav id="paging">
         <?php

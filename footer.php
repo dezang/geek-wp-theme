@@ -1,9 +1,7 @@
 <footer class="geek-footer-bg">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <h3>Copyright <?php bloginfo('name'); ?> All Rights Reserved.</h3>
-      </div>
+      <h3>Copyright <?php bloginfo('name'); ?> All Rights Reserved.</h3>
     </div>
   </div>
 </footer>

@@ -27,8 +27,12 @@ body {
 	background: #f3f3f3;
 }
 
-.geek-header-bg {
-	background-color: black;
+.container {
+	max-width: 760px;
+}
+
+.geek-header {
+	background-color: #272822;
 	color: white;
 }
 
@@ -43,15 +47,75 @@ body {
 }
 
 /* Style */
+/* header */
+.geek-header h1 {
+	display: inline-block;
+	
+}
+
+.geek-header h1 a {
+	color: #A7EC21;
+}
+
+.geek-header .description {
+	margin-left: 10px;
+}
+
 #main {
 	background: #fff;
 	border: 1px solid #dedede;
 	border-radius: 2px;
 }
 
+#main article {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.post-info-title {
+	display: inline-block;
+	text-align : right;
+	width : 80px;
+}
+
+.post-info {
+	margin: 0;
+}
+
+p.post-bracket {
+	font-size: 30px;
+	font-weight: 500;
+	margin: 0;
+}
+
+.excerpt {
+	display: inline;
+}
+
+.excerpt-wrapper .excerpt {
+
+}
+
+.excerpt-content p {
+	margin-left: 91px;
+	margin-top: -23px;
+	margin-bottom: 0px;
+}
+
+.return-value {
+	color: #7F0055;
+}
+
 footer h3 {
 	font-size : 15px;
 }
+
+img.alignright {float:right; margin:0 0 1em 1em}
+img.alignleft {float:left; margin:0 1em 1em 0}
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+a img.alignright {float:right; margin:0 0 1em 1em}
+a img.alignleft {float:left; margin:0 1em 1em 0}
+a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 
 /******************************
 	FOR DEV
