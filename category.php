@@ -9,7 +9,7 @@
 
         <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
           <article>
-            <h1 id="post_title">
+            <h1 id="post-title">
               <span class="return-value">
                 <?php $format = get_post_format(); 
                 if($format != false) {

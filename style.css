@@ -7,6 +7,8 @@
 	Tags: 	develope, programer, simple, responsive-layout,
 			bootstrap, one-column
 */
+
+/* Init */
 header, footer, section, article, aside, nav, hgroup, details, menu, figure, figcaption {
     display: block
 }
@@ -20,37 +22,38 @@ html {
 
 body {
 	margin-bottom: 100px;
-	/*font-family: 'Malgun Gothic', Arial, sans-serif;*/
-	font-size: 15px;
-	line-height: 1.6;
-	color: #3c3c3c;
-	background: #f3f3f3;
 }
 
 .container {
 	max-width: 760px;
 }
 
-.geek-header {
-	background-color: #272822;
-	color: white;
-}
-
-.geek-footer-bg {
+footer {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	text-align: right;
-	/*padding-top: 40px;*/
-	color: white;
-	background-color: black;
+	height: 100px;
 }
 
-/* Style */
+/* 
+ * Style  
+ */
+body {
+	font-size: 15px;
+	line-height: 1.6;
+	color: #3c3c3c;
+}
+
 /* header */
+.geek-header {
+	background-color: #272822;
+}
+
 .geek-header h1 {
-	display: inline-block;
-	
+	width: 100%;
+	margin: 15px 0 15px 0;
+	font-size: 3em;
+	text-align: center;
 }
 
 .geek-header h1 a {
@@ -59,17 +62,53 @@ body {
 
 .geek-header .description {
 	margin-left: 10px;
+	margin-top: 10px;
+	color: white;
 }
 
+/* main */
 #main {
 	background: #fff;
-	border: 1px solid #dedede;
-	border-radius: 2px;
+	border: 1px solid #eee;
 }
 
 #main article {
 	margin-left: 15px;
 	margin-right: 15px;
+}
+
+#single-post #post-title {
+}
+
+#single-post #content h1 {
+	color: #ECE47E;
+	background-color: #272822;
+	font-size: 1.6em;
+	text-align: center;
+	padding: 10px 5px;
+	border-radius: 5px;
+}
+
+#single-post #content h2 {
+	color: #C81B28;
+	margin-top: 30px;
+}
+
+#single-post #content h2:before {
+	content: "@";
+}
+
+#single-post #content h3 {
+	color: #1D8711;
+	margin-top: 30px;
+}
+
+#single-post #content h3:before {
+	content: "// ";
+}
+
+.geek-multi-post #post-title {
+	font-size: 2em;
 }
 
 .post-info-title {
@@ -104,6 +143,13 @@ p.post-bracket {
 
 .return-value {
 	color: #7F0055;
+}
+
+/* footer */
+footer {
+	text-align: right;
+	color: white;
+	background-color: #272822;
 }
 
 footer h3 {

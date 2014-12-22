@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 <div class="container">
-	<div class="row">
+	<div id="single-post" class="row">
 		<main id="main">
-			<section id="content">
+			<section>
 				<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 					<article>
-						<h1 id="post_title">
+						<h1 id="post-title">
 							<span class="return-value">
 								<?php $format = get_post_format(); 
 								if($format != false) {
@@ -15,9 +15,7 @@
 								}
 								?>
 							</span>
-							<a href="<?php the_permalink(); ?>">
-								<?php the_title(); ?>
-							</a>
+							<?php the_title(); ?>
 						</h1>
 						<p class="post-bracket">{</p>
 						<p class="post-info"><span class="post-info-title">updated</span> : <?php the_modified_date(''); ?> <?php the_modified_time(); ?>,</p>
@@ -25,7 +23,9 @@
 						<p class="post-info"><span class="post-info-title">tags</span> : <?php the_tags('[ ',', ',' ]'); ?>,</p>
 						<p class="post-info"><span class="post-info-title">content</span> : below <i class="fa fa-chevron-circle-down"></i></p>
 						<hr>
+						<div id="content">
 						<?php the_content(); ?>
+						</div>
 						<p class="post-bracket">}</p>
 						<section>
 							<h2><span class="return-value">Comments</span></h2>

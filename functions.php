@@ -6,7 +6,7 @@
 	add_theme_support('post-formats', array('image', 'quote', 'aside'));
 
 	//Search Form
-	add_theme_support('html5', array('search-form'));
+	//add_theme_support('html5', array('search-form'));
 	
 	//Menus
 	register_nav_menus(array(

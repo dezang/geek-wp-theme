@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 <div class="container">
-  <div class="row">
+  <div class="row geek-multi-post">
     <main id="main">
       <section id="content">
         <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
           <article>
-            <h1 id="post_title">
+            <h1 id="post-title">
               <span class="return-value">
                 <?php $format = get_post_format(); 
                 if($format != false) {
