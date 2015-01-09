@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 <div class="container">
-  <div class="row geek-multi-post">
+  <div id="multi-post" class="row">
+    <div id="search-box"><?php get_search_form(); ?></div>
     <main id="main">
       <section id="content">
         <?php if(have_posts()): ?>

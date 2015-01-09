@@ -21,18 +21,47 @@ html {
 }
 
 body {
-	margin-bottom: 100px;
+	margin-top: 100px;
+	margin-bottom: 550px;
 }
 
 .container {
-	max-width: 650px;
 }
 
 footer {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	height: 100px;
+}
+
+#multi-post {
+	max-width: 650px;
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+.center-box {
+	max-width: 650px;
+	margin-left: auto; 
+	margin-right: auto;	
+}
+
+nav#menu {
+	margin-top: -40px;
+	padding-bottom: 15px;
+	color: white;
+	text-align: center;
+}
+
+nav#menu li {
+	margin-right: 60px;
+}
+
+nav#menu li:nth-child(2) {
+	margin-right: 150px;	
+}
+nav#menu li:last-child {
+	margin-right: 0px;
 }
 
 /* 
@@ -48,14 +77,15 @@ body {
 /* header */
 .geek-header {
 	background-color: #272822;
-	height: 150px;
+	height: 70px;
 }
 
 .geek-header h1 {
 	width: 100%;
-	margin: 15px 0 15px 0;
+	margin: 6px 0 6px 0;
 	font-size: 3em;
 	text-align: center;
+	display: block;
 }
 
 .geek-header h1 a {
@@ -68,6 +98,9 @@ body {
 	color: white;
 }
 
+#search-box {
+	margin: 5px 0 5px 0;
+}
 /* main */
 #main {
 	background: #fff;
@@ -77,11 +110,18 @@ body {
 #main article {
 	margin-left: 15px;
 	margin-right: 15px;
+	margin-bottom: 15px;
 }
 
-#single-post #post-title {
-	text-align: center;
+#multi-post #post-title {
+	font-size: 2em;
 }
+
+#post-title {
+	text-align: center;
+	margin: 0 0 10px 0;
+}
+
 
 #single-post .post-title-wrap {
 }
@@ -117,9 +157,7 @@ body {
 	text-align: justify;
 	margin: 0 0 25px;
 }
-.geek-multi-post #post-title {
-	font-size: 2em;
-}
+
 
 .post-info-title {
 	display: inline-block;
@@ -155,17 +193,41 @@ p.post-bracket {
 	color: #7F0055;
 }
 
+#paging {
+	text-align: center;
+}
 /* footer */
-footer {
-	text-align: right;
-	color: white;
+.footer-bg {
 	background-color: #272822;
+	color: white;
+}
+footer .share-box ul {
+	margin: 10px 0 10px 0;
+}
+
+@media(min-width: 768px) {
+	footer .share-box li:nth-child(even) {
+		margin: 0 15px 0 15px;
+	}
+}
+
+@media(max-width: 760px ) {
+	footer .share-box li:nth-child(even) {
+		margin: 0 5px 0 5px;
+	}
+}
+
+footer .copyright {
+	text-align: center;
+	
 }
 
 footer h3 {
 	font-size : 15px;
 }
 
+.fb-like-box {
+}
 img.alignright {float:right; margin:0 0 1em 1em}
 img.alignleft {float:left; margin:0 1em 1em 0}
 img.aligncenter {display: block; margin-left: auto; margin-right: auto}
@@ -176,7 +238,17 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 /******************************
 	FOR DEV
  ******************************/
-/*div {
+  #triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 50px solid #272822;
+
+	margin: 0 auto 0 auto;
+}
+
+div {
 	border-style: dotted;
 	border-color: red;
 	border-width: 1px;
@@ -186,4 +258,4 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 	border-style: dotted;
 	border-color: blue;
 	border-width: 1px;
-}*/
+}

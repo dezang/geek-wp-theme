@@ -19,13 +19,24 @@
   </head>
 
   <body <?php body_class(); ?>>
-    <header class="geek-header">
-      <div class="container">
+    <header class="geek-header navbar-fixed-top" >
+      <div class="container center-box">
         <h1>
-          <a href="<?php echo home_url(); ?>">{ <?php bloginfo('name'); ?> }</a>
+          <!-- <a href="<?php echo home_url(); ?>">{ <?php bloginfo('name'); ?> }</a> -->
+          <img src="<?php bloginfo('template_directory'); ?>/images/dzstar.png"/ width="60" height="57">
         </h1>
         <!-- <span class="description"><?php bloginfo('description'); ?></span> -->
-        <?php get_search_form(); ?>
       </div>
 
+      <nav id="menu">
+      <ul class="list-inline">
+          <li>Menu1</li>
+          <li>Menu1</li>
+          <li>Menu1</li>
+          <li>Menu1</li>
+      </ul>
+      </div>
+    </nav>
     </header>
+    
+    
