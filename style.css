@@ -25,7 +25,7 @@ body {
 }
 
 .container {
-	max-width: 760px;
+	max-width: 650px;
 }
 
 footer {
@@ -40,13 +40,15 @@ footer {
  */
 body {
 	font-size: 15px;
-	line-height: 1.6;
+	font-weight: 200;
+	line-height: 1.8;
 	color: #3c3c3c;
 }
 
 /* header */
 .geek-header {
 	background-color: #272822;
+	height: 150px;
 }
 
 .geek-header h1 {
@@ -78,6 +80,10 @@ body {
 }
 
 #single-post #post-title {
+	text-align: center;
+}
+
+#single-post .post-title-wrap {
 }
 
 #single-post #content h1 {
@@ -107,6 +113,10 @@ body {
 	content: "// ";
 }
 
+#single-post #content p {
+	text-align: justify;
+	margin: 0 0 25px;
+}
 .geek-multi-post #post-title {
 	font-size: 2em;
 }
